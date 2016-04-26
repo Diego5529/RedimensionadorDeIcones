@@ -1,0 +1,496 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		75710C9718EDB34600E73250 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75710C9618EDB34600E73250 /* Cocoa.framework */; };
+		75710CA118EDB34600E73250 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 75710C9F18EDB34600E73250 /* InfoPlist.strings */; };
+		75710CA318EDB34600E73250 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 75710CA218EDB34600E73250 /* main.m */; };
+		75710CA718EDB34600E73250 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 75710CA518EDB34600E73250 /* Credits.rtf */; };
+		75710CAA18EDB34600E73250 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 75710CA918EDB34600E73250 /* AppDelegate.m */; };
+		75710CAD18EDB34600E73250 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 75710CAB18EDB34600E73250 /* MainMenu.xib */; };
+		75710CAF18EDB34600E73250 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75710CAE18EDB34600E73250 /* Images.xcassets */; };
+		75710CB618EDB34600E73250 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75710CB518EDB34600E73250 /* XCTest.framework */; };
+		75710CB718EDB34600E73250 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75710C9618EDB34600E73250 /* Cocoa.framework */; };
+		75710CBF18EDB34600E73250 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 75710CBD18EDB34600E73250 /* InfoPlist.strings */; };
+		75710CC118EDB34600E73250 /* RedimensionadorDeIconesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 75710CC018EDB34600E73250 /* RedimensionadorDeIconesTests.m */; };
+		75F543F219069419003A8CA7 /* resize_icon_512_512.png in Resources */ = {isa = PBXBuildFile; fileRef = 75F543F119069419003A8CA7 /* resize_icon_512_512.png */; };
+		75F543F419069437003A8CA7 /* resize_icon_144_144.png in Resources */ = {isa = PBXBuildFile; fileRef = 75F543F319069437003A8CA7 /* resize_icon_144_144.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		75710CB818EDB34600E73250 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 75710C8B18EDB34500E73250 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 75710C9218EDB34600E73250;
+			remoteInfo = RedimensionadorDeIcones;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		75710C9318EDB34600E73250 /* RedimensionadorDeIcones.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RedimensionadorDeIcones.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		75710C9618EDB34600E73250 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		75710C9918EDB34600E73250 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		75710C9A18EDB34600E73250 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		75710C9B18EDB34600E73250 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		75710C9E18EDB34600E73250 /* RedimensionadorDeIcones-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RedimensionadorDeIcones-Info.plist"; sourceTree = "<group>"; };
+		75710CA018EDB34600E73250 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		75710CA218EDB34600E73250 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		75710CA418EDB34600E73250 /* RedimensionadorDeIcones-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RedimensionadorDeIcones-Prefix.pch"; sourceTree = "<group>"; };
+		75710CA618EDB34600E73250 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		75710CA818EDB34600E73250 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		75710CA918EDB34600E73250 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		75710CAC18EDB34600E73250 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		75710CAE18EDB34600E73250 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		75710CB418EDB34600E73250 /* RedimensionadorDeIconesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RedimensionadorDeIconesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		75710CB518EDB34600E73250 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		75710CBC18EDB34600E73250 /* RedimensionadorDeIconesTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RedimensionadorDeIconesTests-Info.plist"; sourceTree = "<group>"; };
+		75710CBE18EDB34600E73250 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		75710CC018EDB34600E73250 /* RedimensionadorDeIconesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RedimensionadorDeIconesTests.m; sourceTree = "<group>"; };
+		75F543F119069419003A8CA7 /* resize_icon_512_512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = resize_icon_512_512.png; sourceTree = "<group>"; };
+		75F543F319069437003A8CA7 /* resize_icon_144_144.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = resize_icon_144_144.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		75710C9018EDB34600E73250 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75710C9718EDB34600E73250 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75710CB118EDB34600E73250 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75710CB718EDB34600E73250 /* Cocoa.framework in Frameworks */,
+				75710CB618EDB34600E73250 /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		75710C8A18EDB34500E73250 = {
+			isa = PBXGroup;
+			children = (
+				75F543F319069437003A8CA7 /* resize_icon_144_144.png */,
+				75F543F119069419003A8CA7 /* resize_icon_512_512.png */,
+				75710C9C18EDB34600E73250 /* RedimensionadorDeIcones */,
+				75710CBA18EDB34600E73250 /* RedimensionadorDeIconesTests */,
+				75710C9518EDB34600E73250 /* Frameworks */,
+				75710C9418EDB34600E73250 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		75710C9418EDB34600E73250 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				75710C9318EDB34600E73250 /* RedimensionadorDeIcones.app */,
+				75710CB418EDB34600E73250 /* RedimensionadorDeIconesTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		75710C9518EDB34600E73250 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				75710C9618EDB34600E73250 /* Cocoa.framework */,
+				75710CB518EDB34600E73250 /* XCTest.framework */,
+				75710C9818EDB34600E73250 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		75710C9818EDB34600E73250 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				75710C9918EDB34600E73250 /* AppKit.framework */,
+				75710C9A18EDB34600E73250 /* CoreData.framework */,
+				75710C9B18EDB34600E73250 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		75710C9C18EDB34600E73250 /* RedimensionadorDeIcones */ = {
+			isa = PBXGroup;
+			children = (
+				75710CA818EDB34600E73250 /* AppDelegate.h */,
+				75710CA918EDB34600E73250 /* AppDelegate.m */,
+				75710CAB18EDB34600E73250 /* MainMenu.xib */,
+				75710CAE18EDB34600E73250 /* Images.xcassets */,
+				75710C9D18EDB34600E73250 /* Supporting Files */,
+			);
+			path = RedimensionadorDeIcones;
+			sourceTree = "<group>";
+		};
+		75710C9D18EDB34600E73250 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				75710C9E18EDB34600E73250 /* RedimensionadorDeIcones-Info.plist */,
+				75710C9F18EDB34600E73250 /* InfoPlist.strings */,
+				75710CA218EDB34600E73250 /* main.m */,
+				75710CA418EDB34600E73250 /* RedimensionadorDeIcones-Prefix.pch */,
+				75710CA518EDB34600E73250 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		75710CBA18EDB34600E73250 /* RedimensionadorDeIconesTests */ = {
+			isa = PBXGroup;
+			children = (
+				75710CC018EDB34600E73250 /* RedimensionadorDeIconesTests.m */,
+				75710CBB18EDB34600E73250 /* Supporting Files */,
+			);
+			path = RedimensionadorDeIconesTests;
+			sourceTree = "<group>";
+		};
+		75710CBB18EDB34600E73250 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				75710CBC18EDB34600E73250 /* RedimensionadorDeIconesTests-Info.plist */,
+				75710CBD18EDB34600E73250 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		75710C9218EDB34600E73250 /* RedimensionadorDeIcones */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 75710CC418EDB34600E73250 /* Build configuration list for PBXNativeTarget "RedimensionadorDeIcones" */;
+			buildPhases = (
+				75710C8F18EDB34600E73250 /* Sources */,
+				75710C9018EDB34600E73250 /* Frameworks */,
+				75710C9118EDB34600E73250 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RedimensionadorDeIcones;
+			productName = RedimensionadorDeIcones;
+			productReference = 75710C9318EDB34600E73250 /* RedimensionadorDeIcones.app */;
+			productType = "com.apple.product-type.application";
+		};
+		75710CB318EDB34600E73250 /* RedimensionadorDeIconesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 75710CC718EDB34600E73250 /* Build configuration list for PBXNativeTarget "RedimensionadorDeIconesTests" */;
+			buildPhases = (
+				75710CB018EDB34600E73250 /* Sources */,
+				75710CB118EDB34600E73250 /* Frameworks */,
+				75710CB218EDB34600E73250 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				75710CB918EDB34600E73250 /* PBXTargetDependency */,
+			);
+			name = RedimensionadorDeIconesTests;
+			productName = RedimensionadorDeIconesTests;
+			productReference = 75710CB418EDB34600E73250 /* RedimensionadorDeIconesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		75710C8B18EDB34500E73250 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "TROVATA INFORM E SISTEMAS";
+				TargetAttributes = {
+					75710CB318EDB34600E73250 = {
+						TestTargetID = 75710C9218EDB34600E73250;
+					};
+				};
+			};
+			buildConfigurationList = 75710C8E18EDB34500E73250 /* Build configuration list for PBXProject "RedimensionadorDeIcones" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 75710C8A18EDB34500E73250;
+			productRefGroup = 75710C9418EDB34600E73250 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				75710C9218EDB34600E73250 /* RedimensionadorDeIcones */,
+				75710CB318EDB34600E73250 /* RedimensionadorDeIconesTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		75710C9118EDB34600E73250 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75F543F419069437003A8CA7 /* resize_icon_144_144.png in Resources */,
+				75710CA118EDB34600E73250 /* InfoPlist.strings in Resources */,
+				75F543F219069419003A8CA7 /* resize_icon_512_512.png in Resources */,
+				75710CAF18EDB34600E73250 /* Images.xcassets in Resources */,
+				75710CA718EDB34600E73250 /* Credits.rtf in Resources */,
+				75710CAD18EDB34600E73250 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75710CB218EDB34600E73250 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75710CBF18EDB34600E73250 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		75710C8F18EDB34600E73250 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75710CAA18EDB34600E73250 /* AppDelegate.m in Sources */,
+				75710CA318EDB34600E73250 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75710CB018EDB34600E73250 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75710CC118EDB34600E73250 /* RedimensionadorDeIconesTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		75710CB918EDB34600E73250 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 75710C9218EDB34600E73250 /* RedimensionadorDeIcones */;
+			targetProxy = 75710CB818EDB34600E73250 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		75710C9F18EDB34600E73250 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				75710CA018EDB34600E73250 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		75710CA518EDB34600E73250 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				75710CA618EDB34600E73250 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		75710CAB18EDB34600E73250 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				75710CAC18EDB34600E73250 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		75710CBD18EDB34600E73250 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				75710CBE18EDB34600E73250 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		75710CC218EDB34600E73250 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		75710CC318EDB34600E73250 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		75710CC518EDB34600E73250 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RedimensionadorDeIcones/RedimensionadorDeIcones-Prefix.pch";
+				INFOPLIST_FILE = "RedimensionadorDeIcones/RedimensionadorDeIcones-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "br.com.trovata.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		75710CC618EDB34600E73250 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RedimensionadorDeIcones/RedimensionadorDeIcones-Prefix.pch";
+				INFOPLIST_FILE = "RedimensionadorDeIcones/RedimensionadorDeIcones-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "br.com.trovata.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		75710CC818EDB34600E73250 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/RedimensionadorDeIcones.app/Contents/MacOS/RedimensionadorDeIcones";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RedimensionadorDeIcones/RedimensionadorDeIcones-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "RedimensionadorDeIconesTests/RedimensionadorDeIconesTests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "br.com.trovata.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		75710CC918EDB34600E73250 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/RedimensionadorDeIcones.app/Contents/MacOS/RedimensionadorDeIcones";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RedimensionadorDeIcones/RedimensionadorDeIcones-Prefix.pch";
+				INFOPLIST_FILE = "RedimensionadorDeIconesTests/RedimensionadorDeIconesTests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "br.com.trovata.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		75710C8E18EDB34500E73250 /* Build configuration list for PBXProject "RedimensionadorDeIcones" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75710CC218EDB34600E73250 /* Debug */,
+				75710CC318EDB34600E73250 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		75710CC418EDB34600E73250 /* Build configuration list for PBXNativeTarget "RedimensionadorDeIcones" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75710CC518EDB34600E73250 /* Debug */,
+				75710CC618EDB34600E73250 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		75710CC718EDB34600E73250 /* Build configuration list for PBXNativeTarget "RedimensionadorDeIconesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75710CC818EDB34600E73250 /* Debug */,
+				75710CC918EDB34600E73250 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 75710C8B18EDB34500E73250 /* Project object */;
+}
