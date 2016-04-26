@@ -1,11 +1,3 @@
-//
-//  AppDelegate.m
-//  RedimensionadorDeIcones
-//
-//  Created by TROVATA INFORM E SISTEMAS on 03/04/14.
-//  Copyright (c) 2014 TROVATA INFORM E SISTEMAS. All rights reserved.
-//
-
 #import "AppDelegate.h"
 
 @implementation AppDelegate
@@ -23,17 +15,14 @@
     // Insert code here to initialize your application
 }
 
-- (IBAction)doRedimensionar:(id)sender {
-    
+- (IBAction)doRedimensionar:(id)sender
+{
     NSLog(@"TOCOU EM REDIMENSIONAR, conteudo do textfield: %@",textFieldPrefixoArquivo.stringValue);
     
     if(imageViewPreview.image && textFieldPrefixoArquivo.stringValue.length > 0){
-        
-        
         NSURL * urlToSave = [self get];
         
         if(urlToSave){
-            
             BOOL allSaved = NO;
             
             NSView * frame = [boxResolucoes.subviews objectAtIndex:0];
@@ -45,51 +34,29 @@
                     NSButton * button = (NSButton*) view;
                     
                     if(button.state == NSOnState){
-                        
                         allSaved = [self doResizeAndSaveWithLargura:(int)button.tag
                                                           andAltura:(int)button.tag
                                                    andDirectoryPath:urlToSave
                                                             andNome:textFieldPrefixoArquivo.stringValue];
-                        
                     }
-                    
                 }
-                
             }
-            
             
             if (allSaved) {
-               
                 [self exibeMensagem:@"Imagens Redimensionadas com Sucesso"
                           andTitulo:@"Sucesso!"];
-           
             }else {
-                
                 [self exibeMensagem:@"Houve um problema ao redimensionar as imagens ou não há nenhuma resolução selecionada"
                           andTitulo:@"Atenção!"];
-                
             }
-            
         }else{
-         
             [self exibeMensagem:@"Informe um diretório válido para gravar"
                       andTitulo:@"ATENÇÃO"];
-            
         }
-        
-        
-        
-        
-        
-        
     }else{
-        
         [self exibeMensagem:@"É necessário selecionar uma imagem e preencher o prefixo"
                   andTitulo:@"ATENÇÃO - Faltam informações"];
-       
     }
-    
-    
 }
 
 -(void)exibeMensagem:(NSString*)mensagem andTitulo:(NSString*)titulo
@@ -103,7 +70,6 @@
     
 }
 
-
 -(NSURL *)get {
     NSOpenPanel *panel = [NSOpenPanel openPanel];
     [panel setAllowsMultipleSelection:NO];
@@ -113,8 +79,8 @@
     return [[panel URLs] lastObject];
 }
 
-- (IBAction)doOpenFile:(id)sender {
-    
+- (IBAction)doOpenFile:(id)sender
+{
     NSLog(@"doOpen");
     NSOpenPanel* panel = [NSOpenPanel openPanel];
     
@@ -133,9 +99,7 @@
             imageViewPreview.imageScaling = NSImageScaleProportionallyDown;
             // Open  the document.
         }
-        
     }];
-    
 }
 
 #pragma mark resize and save
@@ -158,8 +122,6 @@
 #pragma mark resize image
 - (NSImage*) resizeImage:(NSImage*)image size:(NSSize)size
 {
-    
-    
     NSImage * sourceImage = [image copy];
     
     NSRect targetFrame = NSMakeRect(0, 0, size.width, size.height);
@@ -176,14 +138,12 @@
                                   [NSNumber numberWithInt:NSImageInterpolationHigh]}];
     
     [targetImage unlockFocus];
-     
-     
     
     return targetImage;
 }
 
-- (BOOL)saveImage:(NSImage *)image atPath:(NSString *)path {
-  
+- (BOOL)saveImage:(NSImage *)image atPath:(NSString *)path
+{
     BOOL gravou = YES;
     
     NSError *error = nil;
@@ -196,17 +156,13 @@
     [data writeToFile:path options:NSDataWritingWithoutOverwriting error:&error];
     
     if(error.description){
-    
         [self exibeMensagem:error.description
                   andTitulo:[NSString stringWithFormat:@"ERRO AO GRAVAR O ARQUIVO no caminho: %@ ",path]];
         
         gravou = NO;
-        
     }
     
     return gravou;
 }
-
-
 
 @end
