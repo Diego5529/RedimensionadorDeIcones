@@ -152,10 +152,8 @@
         gravou = [self saveImage:resizedImage atPath:[urlToSave path]];
         
     }
-    
     return gravou;
 }
-
 
 #pragma mark resize image
 - (NSImage*) resizeImage:(NSImage*)image size:(NSSize)size
